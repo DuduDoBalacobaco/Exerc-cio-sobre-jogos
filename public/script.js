@@ -27,6 +27,10 @@ function card(games){
                 let title = document.createElement("div");
                 title.className = "title";
                 title.textContent = `Jogo #${games[i].id}`;
+                
+                let icon = document.createElement("i");
+                icon.className = "bi bi-controller";
+                title.appendChild(icon);
                 div.appendChild(title);
 
                 let nome = document.createElement('p');
